@@ -7,8 +7,8 @@ def find_non_injective_pair(mapping: dict) -> tuple | None:
     # Your code here
     for key1 in mapping:
         for key2 in mapping:
-            if key1 != k2 and mapping[k1] == mapping[k2]:
-                return (k1, k2)
+            if key1 != key2 and mapping[key1] == mapping[key2]:
+                return (key1, key2)
     
     return None
     
