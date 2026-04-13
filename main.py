@@ -32,7 +32,12 @@ def my_floor(x: float) -> int:
     """Return floor(x) without using math.floor."""
     # === TODO ===
     # Your code here
-    return int(x)
+    if int(x) == x:
+        return int(x)
+    elif x >= 0:
+        return int(x)
+    else:
+        return int(x) - 1
     # === END TODO ===
 
 
@@ -40,7 +45,12 @@ def my_ceil(x: float) -> int:
     """Return ceil(x) without using math.ceil."""
     # === TODO ===
     # Your code here
-    return int(x) - 1
+    if int(x) == x:
+        return int(x)
+    elif x >= 0:
+        return int(x) + 1
+    else:
+        return int(x)
     # === END TODO ===
 
 #starter code commit
